@@ -68,15 +68,19 @@ Existem alguns arquivos que muito provavelmente você não vai precisar versiona
 #git config --global core.excludesfile ~/.gitignore_global
 
 #Ignore bundler config
+
 /.bundle
 
 #Ignore the build directory
+
 /build
 
 #Ignore Sass' cache
+
 /.sass-cache
 
 #Ignore .DS_store file
+
 .DS_Store
 .cache
 .rvmrc
@@ -86,6 +90,7 @@ vendor/*
 .DS_Store
 
 #Vim
+
 *.swp
 *.swo
 
@@ -94,14 +99,17 @@ Gemfile.lock
 Vagrantfile
 
 #rbenv
+
 .ruby-version
 
 #Ignore deploy related files
+
 deploy
 
 Gemfile.lock
 
-O arquivo .gitignore fica na raiz do projeto.
+
+##### O arquivo .gitignore fica na raiz do projeto.
 
 =====================================================
 
