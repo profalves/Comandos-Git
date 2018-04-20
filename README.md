@@ -174,24 +174,6 @@ Se você precisa adicionar todos os arquivos do diretório, basta digitar:
 
     git commit -a -m "Mensagem do commit"
     
-### Alterando texto de commits
-
-#### Primeiro passo:
-    
-    git rebase -i --root
-    
-Com este comando será aberto um editor conhecido com VIM. Então siga estes passos:
-  
- * Delete o comentário ou a parte que deseja alterar do comentário usando a tecla delete
- * clica emcima da palavra "pick" antes do comentário e aperte 'S'
- * ao aparece embaixo "-- INSERÇÃO --", digite 'r'
- * aperte CTRL + C, digite ':wq'
- * Você será direcionado para outro arquivo, sendo esse específico do comentário, para alterar também. Siga apenas os passos anteriores e saia do VIM. Aguarde o termino do comando "rebase"
- 
-#### Saindo de Arquivo "VIM"
-    
-    :wq
-    
 ### Voltando commits a versões anteriores
 
 #### Voltar um commit:
@@ -618,6 +600,23 @@ Aplique a alteração
 **Atenção:** É possível alterar a ordem dos commits ou remover um commit apenas
 mudando as linhas ou removendo.
 
+### Outra forma de alterar texto de commits
+
+Primeiro passo:
+    
+    git rebase -i --root
+    
+Com este comando será aberto um editor conhecido com VIM. Então siga estes passos:
+  
+ * Delete o comentário ou a parte que deseja alterar do comentário usando a tecla delete
+ * clica emcima da palavra "pick" antes do comentário e aperte 'S'
+ * ao aparece embaixo "-- INSERÇÃO --", digite 'r'
+ * aperte CTRL + C, digite ':wq'
+ * Você será direcionado para outro arquivo, sendo esse específico do comentário, para alterar também. Siga apenas os passos anteriores e saia do VIM. Aguarde o termino do comando "rebase"
+ 
+#### Saindo de Arquivo "VIM"
+    
+    :wq
 
 ##### Juntando vários commits
 Seguir os mesmos passos acima, porém marcar os commtis que devem ser juntados com **squash*
