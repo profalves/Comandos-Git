@@ -180,7 +180,7 @@ Se você precisa adicionar todos os arquivos do diretório, basta digitar:
     
     git rebase -i --root
     
-Com este comando você será aberto um editor conhecido com VIM. Então siga estes passos:
+Com este comando será aberto um editor conhecido com VIM. Então siga estes passos:
   
  * Delete o comentário ou a parte que deseja alterar do comentário usando a tecla delete
  * clica emcima da palavra "pick" antes do comentário e aperte 'S'
