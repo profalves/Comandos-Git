@@ -174,6 +174,24 @@ Se você precisa adicionar todos os arquivos do diretório, basta digitar:
 
     git commit -a -m "Mensagem do commit"
     
+### Alterando texto de commits
+
+#### Primeiro passo:
+    
+    git rebase -i --root
+    
+Com este comando você será aberto um editor conhecido com VIM. Então siga estes passos:
+  
+ * Delete o comentário ou a parte que deseja alterar do comentário usando a tecla delete
+ * clica emcima da palavra "pick" antes do comentário e aperte 'S'
+ * ao aparece embaixo "-- INSERÇÃO --", digite 'r'
+ * aperte CTRL + C, digite ':wq'
+ * Você será direcionado para outro arquivo, sendo esse específico do comentário, para alterar também. Siga apenas os passos anteriores e saia do VIM. Aguarde o termino do comando "rebase"
+ 
+#### Saindo de Arquivo "VIM"
+    
+    :wq
+    
 ### Voltando commits a versões anteriores
 
 #### Voltar um commit:
