@@ -269,6 +269,69 @@ Verifique as demais opções de formatação no [Git Book](http://git-scm.com/bo
 ##### Exibir revisão e autor da última modificação de uma bloco de linhas
 
 	git blame -L 12,22 meu_arquivo.txt
+    
+### Reescrevendo o histórico
+
+##### Alterando mensagens de commit
+
+	git commit --amend -m "Minha nova mensagem"
+
+##### Alterar últimos commits
+Alterando os três últimos commits
+
+	git rebase -i HEAD~3
+
+O editor de texto será aberto com as linhas representando os três últimos commits.
+
+	pick f7f3f6d changed my name a bit
+	pick 310154e updated README formatting and added blame
+	pick a5f4a0d added catfile
+
+Altere para edit os commits que deseja realizar alterações.
+
+	edit f7f3f6d changed my name a bit
+	pick 310154e updated README formatting and added blame
+	pick a5f4a0d added catfile
+
+Feche o editor de texto.
+
+Digite o comando para alterar a mensagem do commit que foi marcado como *edit*.
+
+	git commit –amend -m “Nova mensagem”
+
+Aplique a alteração
+
+	git rebase --continue
+
+**Atenção:** É possível alterar a ordem dos commits ou remover um commit apenas
+mudando as linhas ou removendo.
+
+### Outra forma de alterar texto de commits
+
+Primeiro passo:
+    
+    git rebase -i --root
+    
+Com este comando será aberto o VIM. Então siga estes passos:
+  
+ * Delete o comentário ou a parte que deseja alterar do comentário usando a tecla delete
+ * clica emcima da palavra "pick" antes do comentário e aperte 'S'
+ * ao aparece embaixo "-- INSERÇÃO --", digite 'r'
+ * aperte CTRL + C, digite ':wq'
+ * Você será direcionado para outro arquivo, sendo esse específico do comentário, para alterar também. Siga apenas os passos anteriores e saia do VIM. Aguarde o termino do comando "rebase"
+ 
+#### Saindo de Arquivo "VIM"
+    
+    :wq
+
+##### Juntando vários commits
+Seguir os mesmos passos acima, porém marcar os commtis que devem ser juntados com **squash*
+	
+##### Remover todo histórico de um arquivo
+
+	git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
+	
+	
 
 =====================================================
 
@@ -564,69 +627,10 @@ Onde **2** é o indíce do stash desejado.
 
 	git stash branch meu_branch
 
-### Reescrevendo o histórico
+======================================================
 
-##### Alterando mensagens de commit
-
-	git commit --amend -m "Minha nova mensagem"
-
-##### Alterar últimos commits
-Alterando os três últimos commits
-
-	git rebase -i HEAD~3
-
-O editor de texto será aberto com as linhas representando os três últimos commits.
-
-	pick f7f3f6d changed my name a bit
-	pick 310154e updated README formatting and added blame
-	pick a5f4a0d added catfile
-
-Altere para edit os commits que deseja realizar alterações.
-
-	edit f7f3f6d changed my name a bit
-	pick 310154e updated README formatting and added blame
-	pick a5f4a0d added catfile
-
-Feche o editor de texto.
-
-Digite o comando para alterar a mensagem do commit que foi marcado como *edit*.
-
-	git commit –amend -m “Nova mensagem”
-
-Aplique a alteração
-
-	git rebase --continue
-
-**Atenção:** É possível alterar a ordem dos commits ou remover um commit apenas
-mudando as linhas ou removendo.
-
-### Outra forma de alterar texto de commits
-
-Primeiro passo:
-    
-    git rebase -i --root
-    
-Com este comando será aberto um editor conhecido com VIM. Então siga estes passos:
-  
- * Delete o comentário ou a parte que deseja alterar do comentário usando a tecla delete
- * clica emcima da palavra "pick" antes do comentário e aperte 'S'
- * ao aparece embaixo "-- INSERÇÃO --", digite 'r'
- * aperte CTRL + C, digite ':wq'
- * Você será direcionado para outro arquivo, sendo esse específico do comentário, para alterar também. Siga apenas os passos anteriores e saia do VIM. Aguarde o termino do comando "rebase"
- 
-#### Saindo de Arquivo "VIM"
-    
-    :wq
-
-##### Juntando vários commits
-Seguir os mesmos passos acima, porém marcar os commtis que devem ser juntados com **squash*
-	
-##### Remover todo histórico de um arquivo
-
-	git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
-	
-	
 ### Bisect
+
 O bisect (pesquisa binária) é útil para encontrar um commit que esta gerando um bug ou uma inconsistência entre uma sequência de commits.
 
 ##### Iniciar pequinsa binária
