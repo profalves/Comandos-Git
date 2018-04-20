@@ -601,7 +601,7 @@ Fazendo o **rebase** entre um o branch bug-123 e o master.
 
 Mais informações e explicações sobre o [Rebasing](http://git-scm.com/book/en/Git-Branching-Rebasing)
 
-### Stash
+### Stash - Arquivar e restaurar alterações incompletas
 
 Para alternar entre um branch e outro é necessário fazer o commit das alterações atuais para depois trocar para um outro branch. Se existir a necessidade de realizar a troca sem fazer o commit é possível criar um **stash**. O Stash como se fosse um branch temporário que contem apenas as alterações ainda não commitadas.
 
@@ -623,9 +623,22 @@ Para alternar entre um branch e outro é necessário fazer o commit das alteraç
 	
 Onde **2** é o indíce do stash desejado.
 
+##### Restaurar os arquivos stashed mais recente
+	
+	git stash pop
+	
+##### Descarta o changeset stash mais recente
+	
+	git stash drop
+
+##### Descarta o changeset stash específico
+	
+	git stash drop [ nome do stash ]
+
 ##### Criar um branch a partir de um stash
 
 	git stash branch meu_branch
+    
 
 ======================================================
 
@@ -668,9 +681,17 @@ Se você quer continuar ou iniciar seus estudos com Git, o pessoal da CodeSchool
 https://try.github.io/levels/1/challenges/1
 
 Há também a documentação do Git que é bastante completa:
-http://www.git-scm.com/
+http://www.git-scm.com/doc
+
+Um guia rápido, em inglês, porém excelente e enxuto:
+https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+
+E outro, também em inglês, totalmente interativo:
+http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;
+
+Livro <b>Pro Git</b>, escrito por Scott Chacon e Ben Straub e publicado pela Apress, está disponível aqui. Todo o conteúdo está licenciado sob a licença Creative Commons Attribution Non Commercial Share Alike 3.0.
+https://www.git-scm.com/book/pt-br/v2
 
 # Contribuições
 
-Sinta-se a vontade para realizar adicionar mais informações ou realizar correções. Fork me!
-
+Sinta-se a vontade para adicionar mais informações ou realizar correções. Fork me!
