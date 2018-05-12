@@ -176,6 +176,10 @@ Se você precisa adicionar todos os arquivos do diretório, basta digitar:
     
 ### Voltando commits a versões anteriores
 
+#### Modificando seu último commit:
+    
+    $ git commit --amend
+
 #### Voltar um commit:
 
     git reset HEAD~1
@@ -191,6 +195,20 @@ Se você precisa adicionar todos os arquivos do diretório, basta digitar:
 #### Voltando um commit e excluindo o arquivo, deixando no estágio anterior:
 
     git reset HEAD~1 --hard
+    
+#### voltar somente um arquivo para o commit anterior:
+
+Se o arquivo ainda não está commited:
+
+    git checkout -- [path]
+    
+Se já foi committed e quer voltar pro commit imediatamente anterior ao HEAD:
+
+    git reset HEAD~1 [path]
+    
+Ou
+
+    git checkout HEAD~1 [path]
     
 =====================================================
 
@@ -673,6 +691,15 @@ Depois de encontrar o commit com problema, para retornar para o *HEAD* utilize:
 	
 	git bisect reset
  	
+=====================================================
+ 
+### Manutenção
+Ocasionalmente, Git automaticamente executa um comando chamado "auto gc". Na maioria das vezes, este comando não faz nada. No entanto, se houverem muitos objetos soltos (loose objects) (objetos que não estejam em um packfile) ou muitos packfiles, Git executa um verdadeiro comando git gc. O gc significa garbage collect (coleta de lixo), e o comando faz uma série de coisas: ele reúne todos os objetos soltos e os coloca em packfiles, consolida packfiles em um packfile maior, e remove objetos que não estejam ao alcance de qualquer commit e tem poucos meses de idade.
+
+Você pode executar auto gc manualmente da seguinte forma:
+
+    git gc --auto
+      
 =====================================================
 
 # Concluindo
