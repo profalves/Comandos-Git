@@ -710,6 +710,9 @@ https://try.github.io/levels/1/challenges/1
 Há também a documentação do Git que é bastante completa:
 http://www.git-scm.com/doc
 
+Um guia SUPER PRÁTICO: 
+http://rogerdudler.github.io/git-guide/index.pt_BR.html
+
 Um guia rápido, em inglês, porém excelente e enxuto:
 https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 
