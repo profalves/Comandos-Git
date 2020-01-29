@@ -1,7 +1,7 @@
 # GIT
 
 ## Primeiros Comandos
-    echo "# Materializes-CSS-Material-Design" >> README.md
+    
     git init
     git add README.md
     git commit -m "first commit"
@@ -9,9 +9,11 @@
     git push -u origin master
 
 ##### Geral
+
 	git help
 	
 ##### Comando específico
+
 	git help add
 	git help commit
 	git help <qualquer_comando_git>
@@ -26,21 +28,27 @@ As configurações do GIT são armazenadas no arquivo **.gitconfig** localizado 
 As configurações realizadas através dos comandos abaixo serão incluídas no arquivo citado acima.
 
 ##### Configurar usuário
+
 	git config --global user.name "Rodrigo Alves"
 
 ##### Configurar email
+
 	git config --global user.email igo.sud@hotmail.com
 	
 ##### Configurar editor
+
 	git config --global core.editor vim
 	
 ##### Configurar ferramenta de merge
+
 	git config --global merge.tool vimdiff
 
 ##### Configurar arquivos a serem ignorados
+
 	git config --global core.excludesfile ~/.gitignore
 
 ##### Listar configurações
+
 	git config --list
 	
 ##### Usar saídas do git coloridas
