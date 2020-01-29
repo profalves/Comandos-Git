@@ -7,6 +7,8 @@
     git commit -m "first commit"
     git remote add origin https://github.com/seu-usuario/Nome-do-Repo-Remoto.git
     git push -u origin master
+    
+## Obtendo ajuda
 
 ##### Geral
 
@@ -62,7 +64,7 @@ As configurações realizadas através dos comandos abaixo serão incluídas no 
     
 =====================================================
 
-### Ignorar Arquivos
+## Ignorar Arquivos
 
 Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo **.gitignore** não serão adicionados em um repositório. Existem dois arquivos .gitignore, são eles:
 
