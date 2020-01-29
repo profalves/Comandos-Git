@@ -1,11 +1,5 @@
 # GIT
 
-## Status
-
-* Modificado (modified);
-* Preparado (staged/index)
-* Consolidado (comitted);
-
 ## Primeiros Comandos
     echo "# Materializes-CSS-Material-Design" >> README.md
     git init
@@ -127,8 +121,14 @@ Feito isso, seus arquivos ainda não estão sendo versionados, mas eles estão e
 
 Saber o status do projeto é importante. Com o comando abaixo você consegue ver quais arquivos estão fora do controle, quais foram modificados e estão esperando por uma descrição de modificação etc:
 
-
 	git status
+	
+##### Status
+
+* Modificado (modified);
+* Preparado (staged/index)
+* Consolidado (comitted);
+
 
 ### Adicionar arquivo/diretório (staged area)
 
