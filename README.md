@@ -698,8 +698,24 @@ Ocasionalmente, Git automaticamente executa um comando chamado "auto gc". Na mai
 
 Você pode executar auto gc manualmente da seguinte forma:
 
-    git gc --auto
+	git gc --auto
       
+=====================================================
+
+### Dicas úteis
+
+##### usar saídas do git coloridas
+
+	git config color.ui true
+    
+##### exibir log em apenas uma linha por commit
+
+	git config format.pretty oneline
+	
+##### fazer inclusões interativas
+
+	git add -i
+
 =====================================================
 
 # Concluindo
