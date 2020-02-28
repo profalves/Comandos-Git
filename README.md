@@ -733,6 +733,9 @@ https://try.github.io/levels/1/challenges/1
 Há também a documentação do Git que é bastante completa:
 http://www.git-scm.com/doc
 
+E a página de ajuda em português tem várias informações necessárias para iniciantes no GitHub:
+https://help.github.com/pt
+
 Um guia SUPER PRÁTICO: 
 http://rogerdudler.github.io/git-guide/index.pt_BR.html
 
