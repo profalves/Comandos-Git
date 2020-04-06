@@ -745,6 +745,8 @@ https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 E outro, também em inglês, totalmente interativo:
 http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;
 
+E mais esse (***LEARN GIT IN AN INTERACTIVE WAY***), interativo também, através dos comandos do git: https://wethefoss.github.io/Git-Commands/
+
 Livro <b>Pro Git</b>, escrito por Scott Chacon e Ben Straub e publicado pela Apress, está disponível aqui. Todo o conteúdo está licenciado sob a licença Creative Commons Attribution Non Commercial Share Alike 3.0.
 https://www.git-scm.com/book/pt-br/v2
 
