@@ -750,6 +750,8 @@ E mais esse (***LEARN GIT IN AN INTERACTIVE WAY***), interativo também, atravé
 Livro <b>Pro Git</b>, escrito por Scott Chacon e Ben Straub e publicado pela Apress, está disponível aqui. Todo o conteúdo está licenciado sob a licença Creative Commons Attribution Non Commercial Share Alike 3.0.
 https://www.git-scm.com/book/pt-br/v2
 
+Para quem ainda tem dúvidas sobre os comandos do Git: https://gitexplorer.com/
+
 # Contribuições
 
 Sinta-se a vontade para adicionar mais informações ou realizar correções. Fork me!
