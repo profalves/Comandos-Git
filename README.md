@@ -39,7 +39,7 @@ As configurações realizadas através dos comandos abaixo serão incluídas no 
 	
 ##### Configurar editor
 
-	git config --global core.editor vim
+	git config --global core.editor code
 	
 ##### Configurar ferramenta de merge
 
