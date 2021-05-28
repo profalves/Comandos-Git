@@ -754,6 +754,8 @@ https://www.git-scm.com/book/pt-br/v2
 
 Para quem ainda tem dúvidas sobre os comandos do Git: https://gitexplorer.com/
 
+**FAQ** sobre git: https://www.git-tower.com/learn/git/faq/
+
 # Contribuições
 
 Sinta-se a vontade para adicionar mais informações ou realizar correções. Fork me!
