@@ -755,6 +755,9 @@ https://www.git-scm.com/book/pt-br/v2
 Para quem ainda tem dúvidas sobre os comandos do Git: https://gitexplorer.com/
 
 **FAQ** sobre git: https://www.git-tower.com/learn/git/faq/
+	
+Abaixo você encontra GitFichas pra te ajudar a lembrar desses comandos e atalhos:
+https://gitfichas.com/
 
 # Contribuições
 
