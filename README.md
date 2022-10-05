@@ -61,6 +61,9 @@ As configurações realizadas através dos comandos abaixo serão incluídas no 
 
 	git config format.pretty oneline
 
+##### Rastreiar automaticamente o branch remoto com o git
+	git config --global push.default current
+	git config --global --add --bool push.autoSetupRemote true
     
 =====================================================
 
