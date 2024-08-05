@@ -683,7 +683,7 @@ Onde **2** é o indíce do stash desejado.
 	git stash branch meu_branch
     
 
-======================================================
+---
 
 ### Bisect
 
@@ -726,6 +726,9 @@ Você pode executar auto gc manualmente da seguinte forma:
 	git gc --auto
       
 =====================================================
+
+![image](https://github.com/user-attachments/assets/6b39802a-0508-42c3-b1fc-92e45987b1cc)
+
 
 
 # Concluindo
